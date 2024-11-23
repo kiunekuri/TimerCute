@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temporizador y Clientes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sección izquierda con temporizador y canciones -->
+        <div class="left-section">
+            <h1>Temporizador de 25 minutos</h1>
+            <p id="countdown">25:00</p>
+
+            <!-- Primera canción kawaii -->
+            <audio id="kawaiiSong1">
+                <source src="MikazukiBIGWAVE.mp3" type="audio/mpeg">
+                Tu navegador no soporta el elemento de audio.
+            </audio>
+
+            <!-- Segunda canción kawaii -->
+            <audio id="kawaiiSong2">
+                <source src="Finally-EO.mp3" type="audio/mpeg">
+                Tu navegador no soporta el elemento de audio.
+            </audio>
+
+            <!-- Tercera canción kawaii -->
+            <audio id="kawaiiSong3">
+                <source src="Visty-MagicCarpet.mp3" type="audio/mpeg">
+                Tu navegador no soporta el elemento de audio.
+            </audio>
+
+            <audio id="kawaiiSong4">
+                <source src="I'm the Rain.mp3" type="audio/mpeg">
+                Tu navegador no soporta el elemento de audio.
+            </audio>
+
+            <br>
+            <button id="restartBtn">Reiniciar Temporizador</button>
+        </div>
+
+        <!-- Sección derecha con la lista de clientes -->
+        <div class="right-section">
+            <h2>Anotar Clientes Potenciales</h2>
+            <form id="clienteForm">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                
+                <label for="ultimaCompra">Última Compra:</label>
+                <input type="date" id="ultimaCompra" name="ultimaCompra" required>
+                
+                <button type="submit">Agregar Cliente</button>
+            </form>
+
+            <h2>Lista de Clientes Potenciales</h2>
+            <table id="clientesTabla">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Última Compra</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Aquí se agregarán las filas dinámicamente -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
